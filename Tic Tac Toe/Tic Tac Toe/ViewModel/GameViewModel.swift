@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+
 
 class GameViewModel: ObservableObject {
     @Published private var gameBoard = GameBoard()
@@ -22,6 +24,10 @@ class GameViewModel: ObservableObject {
         gameBoard.gameState
     }
     
+    var score: Score {
+        gameBoard.score
+    }
+    
     func makeMove(at position: Int) {
         if gameBoard.makeMove(at: position) {
             objectWillChange.send()
@@ -30,6 +36,11 @@ class GameViewModel: ObservableObject {
     
     func resetGame() {
         gameBoard.reset()
+        objectWillChange.send()
+    }
+    
+    func resetScore() {
+        gameBoard.resetScore()
         objectWillChange.send()
     }
 }

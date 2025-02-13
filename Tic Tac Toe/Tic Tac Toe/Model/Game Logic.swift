@@ -5,15 +5,19 @@
 //  Created by shashank bejjanki on 2/13/25.
 //
 import Foundation
+import SwiftUI
+
 class GameBoard {
     private var board: [String?]
     private(set) var currentPlayer: Player
     private(set) var gameState: GameState
+    private(set) var score: Score
     
     init() {
         board = Array(repeating: nil, count: 9)
         currentPlayer = .x
         gameState = .playing
+        score = Score()
     }
     
     func makeMove(at position: Int) -> Bool {
@@ -27,13 +31,22 @@ class GameBoard {
         
         if checkWin() {
             gameState = .win(currentPlayer)
+            updateScore()
         } else if checkDraw() {
             gameState = .draw
+            score.draws += 1
         } else {
             currentPlayer = currentPlayer == .x ? .o : .x
         }
         
         return true
+    }
+    
+    private func updateScore() {
+        switch currentPlayer {
+        case .x: score.x += 1
+        case .o: score.o += 1
+        }
     }
     
     func getBoardState() -> [String?] {
@@ -61,5 +74,9 @@ class GameBoard {
         board = Array(repeating: nil, count: 9)
         currentPlayer = .x
         gameState = .playing
+    }
+    
+    func resetScore() {
+        score = Score()
     }
 }

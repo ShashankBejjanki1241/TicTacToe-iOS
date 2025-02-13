@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+
 enum Player {
     case x
     case o
@@ -16,12 +18,21 @@ enum Player {
         case .o: return "O"
         }
     }
+    
+    var color: Color {
+        switch self {
+        case .x: return .blue
+        case .o: return .red
+        }
+    }
 }
 
-enum GameState {
-    case playing
-    case draw
-    case win(Player)
+
+
+struct Score {
+    var x: Int = 0
+    var o: Int = 0
+    var draws: Int = 0
 }
 
 struct Move {
