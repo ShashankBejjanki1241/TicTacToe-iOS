@@ -13,25 +13,7 @@ A modern, animated Tic Tac Toe game built with SwiftUI following MVVM architectu
 - Reset game and score functionality
 - Responsive layout
 
-## Project Structure
-'''
-TicTacToe/
-├── Model/
-│   ├── Player.swift         # Player enum and properties
-│   ├── GameState.swift      # Game state management
-│   ├── Score.swift          # Score tracking structure
-│   ├── Move.swift          # Move structure
-│   └── GameBoard.swift      # Core game logic
-├── ViewModel/
-│   └── GameViewModel.swift  # Game state and UI logic bridge
-├── Views/
-│   ├── GameView.swift       # Main game view
-│   └── Components/
-│       ├── ScoreView.swift      # Score display component
-│       ├── CellView.swift       # Game cell component
-│       └── GameButtonStyle.swift # Custom button styling
-└── App.swift               # App entry point
-'''
+
 ## Requirements
 
 - iOS 14.0+
