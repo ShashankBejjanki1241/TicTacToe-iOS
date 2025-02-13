@@ -23,5 +23,5 @@ A modern, animated Tic Tac Toe game built with SwiftUI following MVVM architectu
 ## Installation
 
 1. Clone the repository
-2. Open `TicTacToe.xcodeproj` in Xcode
+2. Open `Tic Tac Toe.xcodeproj` in Xcode
 3. Build and run the project
