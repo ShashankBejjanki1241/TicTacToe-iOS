@@ -14,7 +14,7 @@ A modern, animated Tic Tac Toe game built with SwiftUI following MVVM architectu
 - Responsive layout
 
 ## Project Structure
-
+'''
 TicTacToe/
 ├── Model/
 │   ├── Player.swift         # Player enum and properties
@@ -31,7 +31,7 @@ TicTacToe/
 │       ├── CellView.swift       # Game cell component
 │       └── GameButtonStyle.swift # Custom button styling
 └── App.swift               # App entry point
-
+'''
 ## Requirements
 
 - iOS 14.0+
