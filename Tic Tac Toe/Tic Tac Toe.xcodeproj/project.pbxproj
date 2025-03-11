@@ -6,12 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		61026FE22D63CDD7006B41E5 /* Tic_Tac_ToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61026FDC2D63CDD7006B41E5 /* Tic_Tac_ToeApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		61026FDC2D63CDD7006B41E5 /* Tic_Tac_ToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeApp.swift; sourceTree = "<group>"; };
 		61DA7BB62D5C0878000DBAC4 /* Tic Tac Toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic Tac Toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		61427FB42D5E95BD006AF9D8 /* Preview Content */ = {
+		61026FF82D63E197006B41E5 /* Preview Content */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -37,8 +42,9 @@
 		61DA7BAD2D5C0878000DBAC4 = {
 			isa = PBXGroup;
 			children = (
+				61026FDC2D63CDD7006B41E5 /* Tic_Tac_ToeApp.swift */,
+				61026FF82D63E197006B41E5 /* Preview Content */,
 				61DA7BB82D5C0878000DBAC4 /* Tic Tac Toe */,
-				61427FB42D5E95BD006AF9D8 /* Preview Content */,
 				61DA7BB72D5C0878000DBAC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,7 +73,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				61427FB42D5E95BD006AF9D8 /* Preview Content */,
+				61026FF82D63E197006B41E5 /* Preview Content */,
 				61DA7BB82D5C0878000DBAC4 /* Tic Tac Toe */,
 			);
 			name = "Tic Tac Toe";
@@ -126,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61026FE22D63CDD7006B41E5 /* Tic_Tac_ToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
