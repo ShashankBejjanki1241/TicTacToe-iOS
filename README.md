@@ -4,14 +4,14 @@ A modern, animated Tic Tac Toe game built with SwiftUI following MVVM architectu
 
 ## Features
 
-- Clean, modern UI with animations
-- Score tracking system
-- Two-player gameplay
-- Spring animations for moves and state changes
-- Color-coded players (X: Blue, O: Red)
-- Game state management
-- Reset game and score functionality
-- Responsive layout
+- Clean, modern UI with animations.
+- Score tracking system.
+- Two-player gameplay.
+- Spring animations for moves and state changes.
+- Color-coded players (X: Blue, O: Red).
+- Game state management.
+- Reset game and score functionality.
+- Responsive layout.
 
 
 ## Requirements
